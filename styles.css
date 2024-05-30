@@ -4,25 +4,36 @@
 }
 body{
     display:grid;
-    grid-template-columns: 2fr 9fr 2fr;
+    grid-template-columns: 2fr 7fr 2fr;
+    grid-template-rows: 1fr 5fr 5fr ;
+    
 }
 
 .headerCont{
-    max-height:10vh;
     grid-area: 1/2/2/4;
-    display:grid;
-    grid-template: 1fr 1fr/ 2fr 1fr 1fr 1fr;
     border:1px solid black;
+    display:grid;
+    grid-template: 1fr 2fr/ 2fr 1fr 1fr 1fr;
 }
-.icon{
+.greet{
+    display:flex;
+    
+}
+.firstIcon{
     height:30px;
 }
 .secondIcon{
     height:50px;
+    
 }
 .projectCont{
     grid-area: 2/2/4/3;
-
+    border:1px solid black;
+}
+.boxesCont{
+    display:grid;
+    grid-template: 1fr 1fr 1fr / repeat(auto-fill, minmax(300px,300px));
+    gap: 50px;
 }
 .title{
     font-weight: 800;
