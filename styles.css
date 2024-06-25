@@ -19,10 +19,10 @@ body{
     display:flex;
     
 }
-.firstIcon{
+.accountIcon{
     height:30px;
 }
-.secondIcon{
+.secondAccountIcon{
     height:50px;
     
 }
@@ -43,6 +43,38 @@ body{
 
 }
 .leftSideCont{
+    background: rgb(0, 162, 255);
     grid-area: 1/1/4/2;
     border:solid 1px black;
+
 }
+.leftSideCont>div{
+    display:grid;
+    grid-template: 40px 40px 40px 40px 40px 40px/1fr ;
+}
+.leftSideCont>.sidebarHeader{
+    display:grid;
+    grid-template: 1fr/40px 50px;
+    align-items: center;
+    font-size:30px;
+    padding: 30px 0px 50px 0px;
+    filter: invert(100%) sepia(2%) saturate(191%) hue-rotate(68deg) brightness(119%) contrast(100%);
+
+}
+.sidebarHeaderImage{
+    height: 40px;
+    margin-left: -4px;
+}
+.leftSideLine{
+    display:grid;
+    grid-template-columns: 40px 50px;
+    
+    align-items: center;
+    color:white;
+    padding-left:0px;
+}
+.sidebarIcon{
+    height:16px;
+    filter: invert(100%) sepia(2%) saturate(191%) hue-rotate(68deg) brightness(119%) contrast(100%);
+}
+
