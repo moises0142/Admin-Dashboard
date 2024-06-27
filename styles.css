@@ -4,27 +4,10 @@
 }
 body{
     display:grid;
+    min-height: 100vh;
     grid-template-columns: 1.5fr 7fr 2fr;
-    grid-template-rows: 1fr 5fr 5fr ;
+    grid-template-rows: 150px 1fr 1fr;
     
-}
-
-.headerCont{
-    grid-area: 1/2/2/4;
-    border:1px solid black;
-    display:grid;
-    grid-template: 1fr 2fr/ 2fr 1fr 1fr 1fr;
-}
-.searchIcon{
-    height:25px;
-    display: grid;
-    justify-self: center;
-}
-.searchIconButton{
-    display: grid;
-    grid-template-columns: 70px;
-
-
 }
 button{
     all:unset;
@@ -36,52 +19,14 @@ button:hover{
     cursor:pointer;
 }
 
-.SFC{
-    padding-top:25px;
-    padding-bottom:40px;
-    padding-left: 50px;
-    display:grid;
-    grid-template:25px/70px 400px;
-    padding-right: 70px;
-    align-items: center;
-}
-.searchInput{
-    border-radius: 50px;
-    border:0px;
-    height:25px;
-    background-color: rgb(226, 226, 226);
-}
-.greet{
-    display:flex;
-    
-}
-.accountIcon{
-    height:30px;
-}
-.secondAccountIcon{
-    height:50px;
-    
-}
-.projectCont{
-    grid-area: 2/2/4/3;
-    border:1px solid black;
-}
-.boxesCont{
-    display:grid;
-    grid-template: 1fr 1fr 1fr / repeat(auto-fill, minmax(300px,300px));
-    gap: 50px;
-}
 .title{
     font-weight: 800;
 }
-.announcementsCont{
-    grid-area: 2/3/3/4;
 
-}
 .leftSideCont{
-    background: rgb(0, 162, 255);
+    background: rgba(25,146,212,255);
     grid-area: 1/1/4/2;
-
+    padding-right: 30px;
 }
 .leftSideCont>div{
     display:grid;
@@ -94,8 +39,7 @@ button:hover{
     align-items: center;
     font-size:25px;
     padding: 30px 0px 40px 20px;
-    filter: invert(100%) sepia(2%) saturate(191%) hue-rotate(68deg) brightness(119%) contrast(100%);
-    
+    filter: invert(100%) sepia(2%) saturate(191%) hue-rotate(68deg) brightness(119%) contrast(100%);    
 }
 .sidebarHeaderImage{
     display:grid;
@@ -104,7 +48,6 @@ button:hover{
     height: 40px;
     margin-left: -4px;
 }
-
 .leftSideLine{
     display:grid;
     grid-template-columns: 50px 50px;
@@ -123,6 +66,127 @@ button:hover{
 .firstHalf{
     padding-bottom: 30px;
 }
+.headerCont{
+    grid-area: 1/2/2/4;
+    display:grid;
+    grid-template: 1fr 2fr/ 7fr 4fr;
+    box-shadow:0px 3px 10px 0px rgba(199, 199, 199, 0.685);
+}
+.searchIcon{
+    height:25px;
+    display: grid;
+    justify-self: center;
+}
+.searchIconButton{
+    display: grid;
+    grid-template-columns: 70px;
+}
+
+.SFC{
+    padding-left: 50px;
+    display:grid;
+    grid-template:25px/70px minmax(50px,590px);
+    padding-right: 70px;
+    align-items: center;
+}
+.searchBarCont{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 65px;
+    padding-bottom: 15px;
+}
+.searchInput{
+    border-radius: 50px;
+    border:0px;
+    height:25px;
+    background-color: rgb(226, 226, 226);
+}
+
+.accountIcon{
+    height:35px;
+}
+
+
 .bellIcon{
     height:25px;
+}
+.headerRightSide{
+display:grid;
+grid-template-rows: 65px;
+grid-template-columns: 25px 35px 150px;
+align-items: center;    
+gap: 25px;
+justify-self: right;
+
+}
+.userName{
+    font-weight:700;
+    font-size:18px;
+}
+.buttons{
+    display:flex;
+    max-height: 50px;
+    align-items: center;
+}
+
+.buttons>button{
+    background-color:rgba(25,146,212,255) ;
+    border-radius:25px;
+    padding:10px 22px 10px 22px;
+    margin-right: 20px;    
+}
+.greet{
+    display: grid;    
+    grid-template: 50px/50px 1fr;
+    column-gap: 10px;
+    padding-left: 70px;
+}
+.GU{
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+.secondAccountIcon{
+    height:50px;
+}
+.hiThere{
+    font-weight:800;
+    font-size:16px;
+}
+.userNameGreet{
+    font-weight:800;
+    font-size:22px;
+}
+
+.projectCont{
+    grid-area: 2/2/4/3;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right:25px;
+    background-color: #e2e8f0;
+}
+.projectContTitle{
+    padding-bottom: 15px;
+    font-size:18px;
+}
+
+.boxesCont{
+    display:grid;
+    grid-template: 1fr 1fr 1fr / repeat(auto-fill, minmax(300px,1fr));
+    gap: 50px;
+}
+.box{
+    padding:20px;
+    border: solid 1px black;
+}
+.announcementsCont{
+    grid-area: 2/3/3/4;
+
+}
+.announcementsCont{
+    
+}
+.trendingCont{
+    background-color: #e2e8f0;
 }
